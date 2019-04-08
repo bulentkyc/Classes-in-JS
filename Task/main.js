@@ -26,6 +26,32 @@ Task - 11: create another instance and name it anotherPerson
 
 Task - 12: call again aging but with anotherPerson and log this too.
 
+Task - 13: request a parameter for Person and name it 'auth'.
+    This parameter can be true or false. Also use get and set to combine
+    this parameter with age. 
+
+    If auth equal to false you should set it false.
+    But if it's true, this time you should check age also. If it's
+    also more than 18 you should set auth as true but oherwise you
+    should set it false.
+
+Task - 14: Create a new class and name it Employee
+
+Task - 15: Extend Person class with Employee (Employee extends Person)
+
+Task - 16: create a method into Employee and name it logAge
+    This method should log to console age!
+
+Task - 17: create an instance from Employee and name it employee
+
+Task - 18: call aging with 20 from employee.
+
+Task - 19: call sayAge from employee and check the console/
+
+Task - 20: extend aging from Employee and add this future:
+    log to console also this kind of message- Happy new year, you are XX
+    anymore. You are YY years older.
+
 */
 class Person{
     constructor(name, lastName, age){
