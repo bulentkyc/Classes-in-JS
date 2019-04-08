@@ -46,11 +46,16 @@ Task - 17: create an instance from Employee and name it employee
 
 Task - 18: call aging with 20 from employee.
 
-Task - 19: call sayAge from employee and check the console/
+Task - 19: call logAge from employee and check the console/
 
 Task - 20: extend aging from Employee and add this future:
     log to console also this kind of message- Happy new year, you are XX
     anymore. You are YY years older.
+
+Task - 21: Make Task - 13 more flexible. For example, if you set person
+    less then 18. For now even if you call aging method and if person 
+    getting older more than 18, auth is still false. In this case 
+    make it true.
 
 */
 class Person{
