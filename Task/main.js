@@ -59,10 +59,23 @@ Task - 21: Make Task - 13 more flexible. For example, if you set person
 
 */
 class Person{
-    constructor(name, lastName, age){
+    constructor(name, lastName, age, auth){
         this.name = name;
         this.lastName = lastName;
         this.age = age;
+        this.auth = auth;
+    }
+
+    get auth(){
+        return this._auth;
+    }
+
+    set auth(value){
+        if(value == true && this.age >= 18){
+            this._auth = true;
+            return;
+        }
+        this._auth = false;
     }
 
     aging(year){
@@ -70,7 +83,7 @@ class Person{
     }
 }
 
-let person = new Person('Bulent', 'Kayici', 32);
+let person = new Person('Bulent', 'Kayici', 32, true);
 
 console.log(person.name, person.lastName, person.age);
 
@@ -78,5 +91,10 @@ console.log(person, Person);
 
 person.aging(8);
 console.log(person);
+
+let anotherPerson = new Person('abc', 'def', 10, true);
+
+anotherPerson.aging(5);
+console.log(anotherPerson);
 
 
